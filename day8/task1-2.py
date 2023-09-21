@@ -11,7 +11,7 @@ canvas.pack()
 left_arm_coords = [100, 100, 80, 150]
 right_arm_coords = [100, 100, 120, 150]
 
-left_arm_direction = 1 
+left_arm_direction = -1 
 right_arm_direction = -1
 
 def animate_arms():
