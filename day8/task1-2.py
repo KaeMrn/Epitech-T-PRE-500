@@ -27,13 +27,17 @@ def animate_arms():
     canvas.create_line(right_arm_coords, fill="black", width=2, tags="arms")
     canvas.after(100, animate_arms)
 
-head = canvas.create_oval(80, 50, 120, 90, outline="black", fill="pink", width=2)
+head = canvas.create_oval(50, 50, 110, 90, outline="black", fill="pink", width=2)
 body = canvas.create_line(100, 90, 100, 140, fill="black", width=2)
 left_leg = canvas.create_line(100, 140, 80, 180, fill="black", width=2)
 left_lower_leg = canvas.create_line(80, 180, 70, 200, fill="black", width=2)
 right_leg = canvas.create_line(100, 140, 120, 180, fill="black", width=2)
 right_lower_leg = canvas.create_line(120, 180, 130, 200, fill="black", width=2)
 left_arm = canvas.create_line(left_arm_coords, fill="black", width=2, tags="arms")
+rope = canvas.create_line(100, 10, 100, 100, fill="red", width=6)
+pole = canvas.create_line(10, 0, 10, 200, fill="Brown", width=6)
+pole1 = canvas.create_line(0, 10, 170, 10, fill="Brown", width=6)
+
 canvas.create_line(right_arm_coords, fill="black", width=2, tags="arms")
 text = canvas.create_text(100, 40, text="Stick-Girl", fill="#FF1493")
 

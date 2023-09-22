@@ -22,10 +22,15 @@ while turns > 0:
        print("wrong")
        print ("You have", turns, 'more guesses' )
     if guess == word:
-        print("Victory!")
+        print(f"Victory! the word {word} is correct!")
         time.sleep(1)
         print("GAME OVER")
         break
+    if all(char in guesses for char in word):
+       print(f"Victory! the word {word} is correct!")
+       time.sleep(1)
+       print("Game over")
+       break
     if turns == 0:
        print("You lose")
        time.sleep(1)
